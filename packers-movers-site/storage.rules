@@ -1,0 +1,37 @@
+rules_version = '2';
+
+// ============================================================
+// K&N PACKERS AND MOVERS — STORAGE SECURITY RULES
+// ============================================================
+// - Anyone can UPLOAD complaint attachments (max 5MB, image/pdf only)
+// - Anyone with the URL can READ files (public for staff)
+// ============================================================
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // ============================================================
+    // COMPLAINT ATTACHMENTS — /complaints/{ticketNumber}/{filename}
+    // ============================================================
+    match /complaints/{ticketId}/{filename} {
+
+      // Public read — anyone with the URL can view attachments
+      allow read: if true;
+
+      // Upload rules: must be < 5MB AND be image or PDF
+      allow write: if request.resource.size < 5 * 1024 * 1024
+                    && (request.resource.contentType.matches('image/.*')
+                        || request.resource.contentType == 'application/pdf');
+
+      // No one can delete or update (prevent tampering)
+      allow delete, update: if false;
+    }
+
+    // ============================================================
+    // BLOCK everything else by default
+    // ============================================================
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File a Complaint | K&amp;N Packers and Movers — Karachi</title>
+  <meta name="description" content="File a complaint with K&N Packers and Movers. We guarantee 100% resolution, reviewed directly by senior management. Response within 2-4 business hours." />
+
+  <!-- Favicon — K&N branded (transparent background) -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
+  <!-- Apple Touch Icons (iOS home screen) -->
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+
+  <!-- iOS Splash Screens (custom branded launch images) -->
+  <link rel="apple-touch-startup-image" href="/apple-splash-640x960.png"     media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-750x1334.png"    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1242x2208.png"   media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1125x2436.png"   media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-828x1792.png"    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1242x2688.png"   media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1080x2340.png"   media="(device-width: 375px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1170x2532.png"   media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1284x2778.png"   media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1179x2556.png"   media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1290x2796.png"   media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1536x2048.png"   media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-1668x2388.png"   media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="/apple-splash-2048x2732.png"   media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)">
+
+  <!-- iOS Web App Settings -->
+  <meta name="apple-mobile-web-app-title" content="K&amp;N Movers">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Microsoft Tile (Windows pinned site) -->
+  <meta name="msapplication-TileColor" content="#1B2A4E">
+  <meta name="msapplication-TileImage" content="/mstile-150x150.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+
+  <!-- Theme color (browser chrome) -->
+  <meta name="theme-color" content="#1B2A4E">
+
+  <!-- Web App Manifest (PWA) -->
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Web fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="complaint.css" />
+  <link rel="stylesheet" href="auth-ui.css" />
+</head>
+<body>
+
+  <!-- ============== Page loading animation ============== -->
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="page-loader-logo">
+      <img src="images/kn-logo.png" alt="K&N Packers and Movers" width="72" height="72" />
+    </div>
+    <div class="page-loader-ring"></div>
+    <div class="page-loader-text">WE PACK · WE MOVE · WE CARE</div>
+    <div class="page-loader-progress"></div>
+  </div>
+
+  <!-- ============== Elite Announcement Bar ============== -->
+  <div class="topbar">
+    <div class="topbar-strip">
+      <div class="container topbar-inner">
+        <!-- Live 24/7 status -->
+        <div class="tb-item tb-live" title="We are available right now">
+          <span class="live-dot"></span>
+          <span class="live-text">Available 24/7</span>
+        </div>
+
+        <!-- Phone -->
+        <a href="tel:+923032549535" class="tb-item tb-phone">
+          <span class="tb-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="tb-label">+92 303 2549535</span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:knenterprises139@gmail.com" class="tb-item tb-email">
+          <span class="tb-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </span>
+          <span class="tb-label">knenterprises139@gmail.com</span>
+        </a>
+
+        <!-- Real-time clock -->
+        <div class="tb-item tb-clock" title="Pakistan Standard Time">
+          <span class="tb-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </span>
+          <span id="tb-time" class="tb-time">--:--:-- PKT</span>
+        </div>
+
+        <!-- Social icons -->
+        <div class="tb-socials">
+          <a href="https://www.facebook.com/share/18oHH2LmyZ/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="tb-social">
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 5.99 4.39 10.97 10.13 11.87v-8.39H7.08v-3.48h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.48h-2.8v8.39C19.61 23.04 24 18.06 24 12.07z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="tb-social">
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/923032549535?text=Hi%20K%26N%20Packers" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="tb-social">
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1.1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.3.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+          </a>
+          <a href="https://share.google/4Ak1K0RYYluqtrlBS" target="_blank" rel="noopener noreferrer" aria-label="Google Business Profile" class="tb-social">
+            <svg viewBox="0 0 24 24" width="11" height="11" aria-hidden="true">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC04" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.07H2.18A10.99 10.99 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.83z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83C6.71 7.31 9.14 5.38 12 5.38z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated announcement marquee -->
+    <div class="topbar-marquee">
+      <div class="marquee-track" id="marqueeTrack">
+        <span class="marquee-item"><span class="mq-icon">🚚</span> Now serving <strong>50+ cities</strong> across Pakistan</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">⚡</span> Get a <strong>free quote</strong> in 60 seconds</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">🛡️</span> <strong>Insured transit</strong> · 100% resolution guarantee</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">🌟</span> Rated <strong>4.9/5</strong> on Google · 15,000+ happy customers</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">📦</span> <strong>Same-day</strong> booking available · Call now</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">🚚</span> Now serving <strong>50+ cities</strong> across Pakistan</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">⚡</span> Get a <strong>free quote</strong> in 60 seconds</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">🛡️</span> <strong>Insured transit</strong> · 100% resolution guarantee</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">🌟</span> Rated <strong>4.9/5</strong> on Google · 15,000+ happy customers</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-item"><span class="mq-icon">📦</span> <strong>Same-day</strong> booking available · Call now</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">
+          <img src="images/kn-logo.png" alt="K&N Packers and Movers logo" width="56" height="56" />
+        </span>
+        <span class="logo-text">
+          K&amp;N<small>Packers and Movers</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#why">Why Us</a>
+        <a href="index.html#process">How It Works</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#faq">FAQ</a>
+
+        <button id="signInBtn" class="signin-btn" type="button">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+            <polyline points="10 17 15 12 10 7"/>
+            <line x1="15" y1="12" x2="3" y2="12"/>
+          </svg>
+          <span>Sign In</span>
+        </button>
+
+        <div id="userMenu" class="user-menu" style="display:none">
+          <button class="user-menu-btn" type="button">
+            <span id="userAvatar" class="user-menu-avatar">?</span>
+            <span id="userName" class="user-menu-name">User</span>
+            <span class="dropdown-arrow" style="font-size:.7rem;opacity:.7">▼</span>
+          </button>
+          <div class="user-menu-dropdown">
+            <a href="index.html" class="user-menu-item" onclick="return false"><span>👤</span> My Profile</a>
+            <a href="index.html" class="user-menu-item" onclick="return false"><span>📋</span> My Quotes</a>
+            <a href="#" class="user-menu-item" onclick="return false"><span>🚨</span> My Complaints</a>
+            <div class="user-menu-divider"></div>
+            <button id="logoutBtn" class="user-menu-item" type="button"><span>🚪</span> Sign Out</button>
+          </div>
+        </div>
+
+        <a href="index.html#quote" class="nav-logo" aria-label="Get a free quote">
+          <img src="images/kn-logo.png" alt="K&N Packers and Movers" />
+          <span>Get Free Quote</span>
+        </a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =============== MAIN CONTENT (WCAG landmark) =============== -->
+  <main id="main-content">
+
+  <!-- =============== COMPLAINT HERO =============== -->
+  <section class="complaint-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="bc-sep">›</span>
+        <span aria-current="page">File a Complaint</span>
+      </nav>
+      <div class="complaint-hero-inner">
+        <span class="kicker kicker-orange">Customer Care</span>
+        <h1>We Are Here to Listen &amp; <span class="accent">Resolve</span></h1>
+        <p class="hero-desc">At K&amp;N, we care about your experience. If something didn't go as planned, please let us know so we can make it right instantly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== COMPLAINT MAIN =============== -->
+  <section class="complaint-section">
+    <div class="container complaint-grid">
+      <!-- =============== FORM =============== -->
+      <div class="complaint-form-wrap">
+        <form class="complaint-form" id="complaintForm" enctype="multipart/form-data" novalidate>
+          <div class="form-head">
+            <h2>Submit Your Complaint</h2>
+            <p>All fields marked with <span class="req">*</span> are required. Your details are 100% confidential.</p>
+          </div>
+
+          <div class="form-row">
+            <label class="form-field" for="complaint-name">
+              <span class="label-text">Full Name <span class="req">*</span></span>
+              <input id="complaint-name" type="text" name="name" required placeholder="e.g. Ahmed Khan" autocomplete="name" />
+              <span class="error-msg" data-for="name"></span>
+            </label>
+            <label class="form-field" for="complaint-phone">
+              <span class="label-text">Phone Number <span class="req">*</span></span>
+              <input id="complaint-phone" type="tel" name="phone" required placeholder="03XX-XXXXXXX" pattern="[0-9]{4}-?[0-9]{7}" autocomplete="tel" />
+              <span class="error-msg" data-for="phone"></span>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="form-field" for="complaint-email">
+              <span class="label-text">Email Address <span class="req">*</span></span>
+              <input id="complaint-email" type="email" name="email" required placeholder="you@example.com" autocomplete="email" />
+              <span class="error-msg" data-for="email"></span>
+            </label>
+            <label class="form-field" for="complaint-booking-id">
+              <span class="label-text">Booking / Consignment Number <span class="req">*</span></span>
+              <input id="complaint-booking-id" type="text" name="booking_id" required placeholder="e.g. KN-2025-00482" />
+              <span class="error-msg" data-for="booking_id"></span>
+            </label>
+          </div>
+
+          <label class="form-field" for="complaint-issue-type">
+            <span class="label-text">Type of Issue <span class="req">*</span></span>
+            <select id="complaint-issue-type" name="issue_type" required>
+              <option value="">[Select Issue Type...]</option>
+              <option value="delay">Delay in Delivery</option>
+              <option value="damage">Damaged Items / Goods</option>
+              <option value="staff">Staff Behaviour / Professionalism</option>
+              <option value="pricing">Pricing / Overcharging Dispute</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error-msg" data-for="issue_type"></span>
+          </label>
+
+          <label class="form-field" for="complaint-description">
+            <span class="label-text">Detailed Description <span class="req">*</span></span>
+            <textarea id="complaint-description" name="description" required rows="6" placeholder="Please describe what happened in detail..."></textarea>
+            <span class="error-msg" data-for="description"></span>
+          </label>
+
+          <div class="form-field">
+            <span class="label-text">Attachments <span class="opt">(Optional)</span></span>
+            <label class="file-drop" id="fileDrop">
+              <input type="file" name="attachments" id="fileInput" multiple accept=".jpg,.jpeg,.png,.pdf" />
+              <span class="file-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                  <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+              </span>
+              <span class="file-text">
+                <strong>Click to upload</strong> or drag and drop<br/>
+                <small>JPG, PNG or PDF · Photos auto-compressed · Up to 5 files</small>
+              </span>
+              <span class="file-list" id="fileList"></span>
+            </label>
+            <p class="file-help">
+              💡 <strong>Tip:</strong> Photos are auto-compressed to fit. For large PDFs (&gt;1MB), please email directly to <a href="mailto:knenterprises139@gmail.com">knenterprises139@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="form-consent">
+            <label class="checkbox">
+              <input type="checkbox" name="consent" required />
+              <span>I confirm the information above is accurate and consent to K&amp;N contacting me about this complaint. <span class="req">*</span></span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
+            <span class="btn-text">Submit Complaint</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+
+          <p class="form-micro">🔒 All submissions are encrypted and sent directly to our escalation team.</p>
+        </form>
+
+        <!-- Success State -->
+        <div class="complaint-success" id="complaintSuccess" hidden>
+          <div class="success-card">
+            <div class="success-icon">
+              <svg viewBox="0 0 64 64" width="80" height="80" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" fill="#E8F8EE"/>
+                <path d="M20 32l8 8 16-18" fill="none" stroke="#1F9D55" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h2>✓ Complaint Received Successfully</h2>
+            <p class="success-sub">Thank you for bringing this to our attention.</p>
+
+            <div class="complaint-id-box">
+              <span class="id-label">Your Complaint ID</span>
+              <strong class="id-value" id="complaintId">#KN-00000</strong>
+              <span class="id-hint">Please save this for future reference</span>
+            </div>
+
+            <p class="success-body">Our customer care escalation team will investigate this and contact you within <strong>2 to 4 business hours</strong>.</p>
+
+            <div class="success-actions">
+              <a href="index.html" class="btn btn-outline">← Back to Home</a>
+              <button type="button" class="btn btn-primary" onclick="window.location.reload()">Submit Another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =============== TRUST SIDEBAR =============== -->
+      <aside class="trust-sidebar">
+        <div class="trust-card">
+          <div class="trust-card-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2 4 5v6c0 5 3.5 9.7 8 11 4.5-1.3 8-6 8-11V5l-8-3z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Our Promise</h3>
+          <p>Every complaint is <strong>directly reviewed by our senior management team</strong>. We maintain a <strong>100% resolution rate</strong> across all escalated issues.</p>
+        </div>
+
+        <div class="trust-card trust-card-blue">
+          <div class="trust-card-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#1B2A4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h3>Direct Support</h3>
+          <p>For urgent escalations, speak directly with our customer care team:</p>
+          <a href="tel:+923032549535" class="support-link">
+            <strong>📞 +92 303 2549535</strong>
+            <small>24/7 Helpline</small>
+          </a>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-card-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Visit Us</h3>
+          <p class="addr-mini">
+            <strong>Corporate Office</strong><br/>
+            Plot No. 502, P.E.C.H.S. Block 6,<br/>
+            Opp: Cafe Al-Makkah, Jamia Saeedia,<br/>
+            Karachi, Pakistan.
+          </p>
+          <a href="https://wa.me/923032549535?text=Hi%20K%26N%20Packers%2C%20I%20need%20help%20with%20a%20complaint" class="support-link">
+            <strong>💬 WhatsApp Us</strong>
+            <small>Quick response</small>
+          </a>
+        </div>
+
+        <div class="trust-stat">
+          <div class="stat-row">
+            <strong>100%</strong>
+            <span>Resolution Rate</span>
+          </div>
+          <div class="stat-row">
+            <strong>&lt; 4 hrs</strong>
+            <span>Avg. Response</span>
+          </div>
+          <div class="stat-row">
+            <strong>Senior Team</strong>
+            <span>Direct Review</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  </main>
+  <!-- =============== End of MAIN CONTENT =============== -->
+
+  <!-- =============== Footer =============== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-mark">
+            <img src="images/kn-logo.png" alt="K&N Packers and Movers logo" width="52" height="52" />
+          </span>
+          <span class="logo-text">K&amp;N<small>Packers and Movers</small></span>
+        </a>
+        <p class="footer-tagline">WE PACK. WE MOVE. WE CARE.</p>
+        <p>Karachi's most trusted relocation partner. Licensed, insured and background‑verified crews for a worry‑free move.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="index.html#services">Household Relocation</a>
+        <a href="index.html#services">Office Relocation</a>
+        <a href="index.html#services">Storage Solutions</a>
+        <a href="index.html#services">Vehicle Transportation</a>
+        <a href="index.html#services">International Move</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="index.html#why">About Us</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#process">How It Works</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="complaint.html" class="footer-complaint-link">📝 File a Complaint</a>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <a href="tel:+923032549535">📞 +92 303 2549535</a>
+        <a href="mailto:knenterprises139@gmail.com">✉️ knenterprises139@gmail.com</a>
+        <div class="footer-addr">
+          <svg class="map-pin" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+          </svg>
+          <div>
+            <strong class="addr-label">Corporate Office</strong>
+            <span class="addr-text">Plot No. 502, P.E.C.H.S. Block 6, Opp: Cafe Al-Makkah, Jamia Saeedia, Karachi, Pakistan.</span>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/share/18oHH2LmyZ/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">📘</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶️</a>
+          <a href="https://wa.me/923032549535?text=Hi%20K%26N%20Packers" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 K&amp;N Packers and Movers. All rights reserved.</span>
+        <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Sitemap</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- (Custom cursor removed — using normal system cursor) -->
+
+  <!-- ============== Auth Modal (Sign In / Sign Up) ============== -->
+  <div id="authModal" class="auth-modal" aria-hidden="true">
+    <div class="auth-modal-overlay"></div>
+    <div class="auth-modal-content">
+      <button class="auth-modal-close" type="button" aria-label="Close">×</button>
+
+      <div class="auth-modal-header">
+        <h3>🔐 K&amp;N Account</h3>
+        <p>Sign in to track your quotes, view move status, and file complaints faster.</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" type="button" data-tab="signin">Sign In</button>
+        <button class="auth-tab" type="button" data-tab="signup">Sign Up</button>
+      </div>
+
+      <div id="authError" class="auth-error"></div>
+      <div id="authSuccess" class="auth-success"></div>
+
+      <form id="signinForm" class="auth-form" autocomplete="on">
+        <div class="auth-field">
+          <label for="signin-email">Email Address</label>
+          <input id="signin-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+        </div>
+        <div class="auth-field">
+          <label for="signin-password">Password</label>
+          <input id="signin-password" type="password" name="password" placeholder="••••••••" required autocomplete="current-password" />
+        </div>
+        <button type="submit" class="auth-submit">Sign In</button>
+      </form>
+
+      <form id="signupForm" class="auth-form" style="display:none" autocomplete="on">
+        <div class="auth-field">
+          <label for="signup-name">Full Name</label>
+          <input id="signup-name" type="text" name="name" placeholder="e.g. Ahmed Khan" required autocomplete="name" />
+        </div>
+        <div class="auth-field">
+          <label for="signup-email">Email Address</label>
+          <input id="signup-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+        </div>
+        <div class="auth-field">
+          <label for="signup-phone">Phone Number</label>
+          <input id="signup-phone" type="tel" name="phone" placeholder="03XX-XXXXXXX" required autocomplete="tel" />
+        </div>
+        <div class="auth-field">
+          <label for="signup-password">Password (min 6 characters)</label>
+          <input id="signup-password" type="password" name="password" placeholder="At least 6 characters" required minlength="6" autocomplete="new-password" />
+        </div>
+        <button type="submit" class="auth-submit">Create Account</button>
+      </form>
+
+      <div class="auth-divider">or</div>
+
+      <button id="googleSignInBtn" class="auth-google-btn" type="button">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC04" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.07H2.18A10.99 10.99 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.83z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83C6.71 7.31 9.14 5.38 12 5.38z"/>
+        </svg>
+        Continue with Google
+      </button>
+
+      <div class="auth-footer">
+        By continuing, you agree to K&amp;N's terms of service.
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/923032549535?text=Hi%20K%26N%20Packers%2C%20I%20need%20help" class="whatsapp" aria-label="Need any help? WhatsApp us">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+      <path fill="#fff" d="M19.11 17.27c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.13-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.48.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.48-.07-.13-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.13.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.6-.65 1.83-1.28.22-.63.22-1.18.16-1.28-.06-.11-.25-.18-.52-.31zM16 4C9.37 4 4 9.37 4 16c0 2.11.55 4.18 1.6 6L4 28l6.18-1.6A11.93 11.93 0 0 0 16 28c6.63 0 12-5.37 12-12S22.63 4 16 4z"/>
+    </svg>
+    <span>Need any help?</span>
+  </a>
+
+  <script type="module" src="script.js"></script>
+  <script type="module" src="complaint.js"></script>
+  <script type="module" src="auth-ui.js"></script>
+</body>
+</html>

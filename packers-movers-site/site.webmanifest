@@ -1,0 +1,79 @@
+{
+  "name": "K&N Packers and Movers",
+  "short_name": "K&N Movers",
+  "description": "Karachi's trusted relocation partner for household, office, vehicle and storage shifting across Pakistan. Insured, on-time and affordable.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1B2A4E",
+  "theme_color": "#1B2A4E",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/android-chrome-512x512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/apple-touch-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon-167x167.png",
+      "sizes": "167x167",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Get a Free Quote",
+      "short_name": "Quote",
+      "description": "Get an instant moving quote in 60 seconds",
+      "url": "/#quote",
+      "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Call Us",
+      "short_name": "Call",
+      "description": "Call K&N Packers — 24/7 helpline",
+      "url": "tel:+923032549535"
+    },
+    {
+      "name": "WhatsApp",
+      "short_name": "Chat",
+      "description": "Chat with K&N on WhatsApp",
+      "url": "https://wa.me/923032549535"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+/* =========================================================
+   admin.css — Admin Dashboard Styles
+   Includes:
+   - Responsive table → card transformation
+   - Text truncation utilities
+   - Auth provider badges
+   - Status dropdown polish
+   - Whitespace fixes for routes/timestamps
+   - Notification badge alignment
+   - FAB z-index/positioning fix
+   ========================================================= */
+
+/* === Fix #1: Responsive table → card layout === */
+.dash-table-wrap{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  border-radius:8px;
+  border:1px solid var(--line);
+}
+.dash-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.85rem;
+  min-width:760px; /* Force horizontal scroll on small screens */
+}
+.dash-table thead{
+  background:linear-gradient(180deg,#F5F8FF 0%, #EFF3FB 100%);
+}
+.dash-table th{
+  text-align:left;padding:14px 12px;
+  font-weight:700;color:var(--blue);
+  text-transform:uppercase;letter-spacing:.5px;font-size:.72rem;
+  border-bottom:2px solid var(--line);
+  white-space:nowrap;
+  position:sticky;top:0;background:#F5F8FF;
+}
+.dash-table td{
+  padding:14px 12px;border-bottom:1px solid var(--line);
+  vertical-align:middle;
+}
+.dash-table tr:hover td{background:#FAFBFF}
+.dash-table tr:last-child td{border-bottom:0}
+
+/* === Fix #2: Text truncation with hover tooltip + "View" button === */
+.cell-truncate{
+  max-width:280px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  cursor:help;
+  display:inline-block;
+  vertical-align:middle;
+}
+.cell-truncate-wide{
+  max-width:380px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  cursor:help;
+  display:inline-block;
+  vertical-align:middle;
+}
+.msg-expand-btn{
+  background:transparent;border:0;color:var(--blue);
+  font-weight:600;font-size:.78rem;cursor:pointer;
+  padding:2px 6px;border-radius:4px;
+  margin-left:6px;transition:.15s;
+  font-family:inherit;
+}
+.msg-expand-btn:hover{background:var(--bg-alt);color:var(--orange)}
+.msg-full{
+  display:none;
+  background:#FAFBFF;
+  border-left:3px solid var(--orange);
+  padding:10px 12px;margin-top:8px;border-radius:6px;
+  font-size:.82rem;color:var(--ink);line-height:1.5;
+  white-space:pre-wrap;word-wrap:break-word;
+}
+.msg-full.show{display:block}
+
+/* === Fix #3: Auth provider badges === */
+.auth-provider{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:3px 8px;border-radius:99px;
+  font-size:.68rem;font-weight:700;
+  letter-spacing:.3px;text-transform:uppercase;
+  vertical-align:middle;line-height:1;
+}
+.auth-provider.email{background:rgba(27,42,78,.10);color:var(--blue)}
+.auth-provider.google{background:rgba(66,133,244,.10);color:#2563EB}
+.auth-provider.phone{background:rgba(34,197,94,.10);color:#16A34A}
+.auth-provider.unknown{background:rgba(122,122,122,.10);color:var(--muted)}
+.auth-provider svg{width:10px;height:10px;flex-shrink:0}
+
+/* === Fix #4: FAB z-index / repositioning === */
+.fab-widget{ /* If you add one, give it this */
+  z-index:50 !important; /* Below WhatsApp (60) but above content */
+}
+@media (max-width:768px){
+  .fab-widget{
+    bottom:80px !important; /* Above WhatsApp button */
+    right:16px !important;
+  }
+}
+@media (max-width:480px){
+  .fab-widget{
+    bottom:100px !important;
+    right:12px !important;
+    transform:scale(.9);
+  }
+}
+
+/* === Fix #5: Premium status dropdown === */
+.dash-status-select{
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  padding:7px 28px 7px 10px;
+  border:1.5px solid var(--line);
+  border-radius:7px;font-size:.78rem;
+  font-weight:600;color:var(--ink);background:#fff;
+  cursor:pointer;transition:.15s;
+  font-family:inherit;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B2A4E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 8px center;
+  background-size:14px;
+  min-width:100px;
+}
+.dash-status-select:hover{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(27,42,78,.08);
+}
+.dash-status-select:focus{
+  outline:none;border-color:var(--orange);
+  box-shadow:0 0 0 3px rgba(210,75,0,.20);
+}
+
+/* === Fix #6: Whitespace nowrap for route + timestamps === */
+.cell-nowrap{
+  white-space:nowrap !important;
+}
+.cell-route{
+  font-weight:600;color:var(--blue);
+  white-space:nowrap;
+  display:inline-flex;align-items:center;gap:4px;
+}
+.cell-route .arrow{
+  color:var(--orange);font-weight:700;
+}
+.cell-time{
+  white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+  color:var(--muted);font-size:.78rem;
+}
+
+/* === Fix #7: Notification badge alignment === */
+.notif-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:24px;height:22px;
+  padding:0 8px;border-radius:99px;
+  background:var(--orange);color:#fff;
+  font-size:.72rem;font-weight:800;
+  letter-spacing:.3px;line-height:1;
+  vertical-align:middle;
+  margin-left:8px;
+  box-shadow:0 2px 8px rgba(210,75,0,.30);
+}
+.dash-section h3{
+  display:flex;align-items:center;
+  gap:10px;
+}
+
+/* === Status badges (color-coded) === */
+.status-badge{
+  display:inline-block;padding:3px 10px;border-radius:99px;
+  font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;
+  white-space:nowrap;
+}
+.status-new,.status-contacted,.status-quoted,.status-booked,
+.status-completed,.status-in_review,.status-resolved,.status-closed{
+  white-space:nowrap;
+}
+.status-new{background:#E8F0FF;color:#1B2A4E}
+.status-contacted{background:#FFE8DC;color:#A63B00}
+.status-quoted{background:#E8F8EE;color:#1F9D55}
+.status-booked{background:#F0E8FF;color:#7B3FE4}
+.status-completed{background:#E8E8E8;color:#5A6478}
+.status-in_review{background:#FFE8DC;color:#A63B00}
+.status-resolved{background:#E8F8EE;color:#1F9D55}
+.status-closed{background:#E8E8E8;color:#5A6478}
+
+/* === Customer meta info (auth provider + verified) === */
+.customer-meta{
+  display:flex;flex-direction:column;gap:4px;
+}
+.customer-meta-name{
+  font-weight:600;color:var(--blue);font-size:.9rem;
+}
+.customer-meta-email{
+  color:var(--muted);font-size:.75rem;
+  max-width:200px;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* === Empty state styling === */
+.empty-state{
+  text-align:center;padding:48px 20px;color:var(--muted);font-size:.9rem;
+}
+.empty-state-icon{font-size:2.4rem;margin-bottom:10px;opacity:.4}
+
+/* === Refresh button === */
+.dash-btn{
+  padding:8px 14px;border-radius:8px;font-size:.78rem;
+  font-weight:600;cursor:pointer;border:1.5px solid transparent;
+  transition:.15s;font-family:inherit;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.dash-btn-primary{background:var(--orange);color:#fff;border-color:var(--orange)}
+.dash-btn-primary:hover{background:#B33E00}
+.dash-btn-outline{background:#fff;color:var(--blue);border-color:var(--line)}
+.dash-btn-outline:hover{border-color:var(--blue);background:var(--bg-alt)}
+.dash-btn-danger{background:#C73E1D;color:#fff;border-color:#C73E1D}
+.dash-btn-danger:hover{background:#9b2d12}
+
+/* === Stats cards === */
+.dash-stats{
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:18px;margin-bottom:40px;
+}
+.stat-card{
+  background:#fff;padding:24px;border-radius:14px;
+  box-shadow:0 4px 20px rgba(27,42,78,.06);
+  border-left:4px solid var(--orange);
+  transition:.2s;
+}
+.stat-card:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(27,42,78,.10)}
+.stat-card.blue{border-left-color:var(--blue)}
+.stat-card.green{border-left-color:#1F9D55}
+.stat-card.orange{border-left-color:var(--orange)}
+.stat-card .num{
+  font-family:var(--font-heading);font-size:2.4rem;font-weight:900;
+  color:var(--blue);line-height:1;
+}
+.stat-card .label{
+  font-size:.78rem;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.6px;font-weight:600;margin-top:8px;display:block;
+}
+
+/* === Action buttons in tables === */
+.dash-actions{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+
+/* === Responsive table → card on mobile === */
+@media (max-width:768px){
+  .dash-table-wrap{overflow-x:visible;border:0}
+
+  /* Hide table headers */
+  .dash-table thead{display:none}
+
+  /* Convert rows to cards */
+  .dash-table,.dash-table tbody,.dash-table tr,.dash-table td{
+    display:block;width:100% !important;
+  }
+  .dash-table tr{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    margin-bottom:14px;
+    padding:14px;
+    box-shadow:0 2px 12px rgba(27,42,78,.05);
+  }
+  .dash-table td{
+    padding:8px 0;
+    border-bottom:1px solid rgba(232,234,242,.5);
+    display:flex;justify-content:space-between;
+    align-items:center;gap:12px;
+  }
+  .dash-table td:last-child{border-bottom:0;padding-top:12px}
+  .dash-table td::before{
+    content:attr(data-label);
+    font-weight:700;color:var(--blue);
+    font-size:.72rem;text-transform:uppercase;
+    letter-spacing:.5px;flex-shrink:0;
+  }
+  .dash-table td[data-label="Actions"]{
+    justify-content:flex-end;border-bottom:0;
+  }
+  /* Remove min-width on mobile so cards fit */
+  .dash-table{min-width:0}
+  /* Truncate inside cards */
+  .cell-truncate,.cell-truncate-wide{
+    max-width:60vw;
+  }
+}
+
+@media (max-width:480px){
+  .stat-card{padding:18px}
+  .stat-card .num{font-size:1.8rem}
+  .dash-section{padding:20px}
+  .dash-section h3{font-size:1.1rem}
+  .dash-table tr{padding:12px}
+}
+
+/* === Highlight important data === */
+.data-highlight{
+  font-weight:700;color:var(--blue);
+}
+
+/* === Phone link styling === */
+.phone-link{
+  color:var(--blue);font-weight:600;text-decoration:none;
+  transition:.15s;
+}
+.phone-link:hover{color:var(--orange);text-decoration:underline}
+
+/* === Email link styling === */
+.email-link{
+  color:var(--blue);text-decoration:none;
+  word-break:break-all;
+  transition:.15s;
+}
+.email-link:hover{color:var(--orange);text-decoration:underline}
